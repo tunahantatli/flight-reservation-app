@@ -1,0 +1,18 @@
+Project Plan
+
+# Flights 
+   -client_users
+       > views upcoming flights
+
+   -staff_users
+       > crud flights
+       > views all flights with Reservations
+
+# Reservations 
+   -client_users
+       > crud (their own) reservations
+
+   -staff_users
+       > crud (all) reservations
+
+# Passenger
