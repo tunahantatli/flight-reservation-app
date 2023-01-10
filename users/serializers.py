@@ -44,3 +44,9 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.set_password(password)
         user.save()
         return user
+
+# login /logout --------> dj-rest-auth
+# register ---------> (serializer -view-url)
+
+#generate token with signals and return token in registration
+#return user data in login
