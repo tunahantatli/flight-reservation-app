@@ -43,3 +43,17 @@ class ReservationSerializer(serializers.ModelSerializer):
         reservation.save()
         return reservation
             
+# serializer for Staff Users
+class StaffSerializer(serializers.ModelSerializer):
+    reservation = ReservationSerializer(many=True, read_only=True)
+    class Meta:
+        model = Flight
+        fields = (
+            "id",
+            "flight_number",
+            "departure_city",
+            "arrival_city",
+            "date_of_departure",
+            "edt",
+            "reservation",
+        )
